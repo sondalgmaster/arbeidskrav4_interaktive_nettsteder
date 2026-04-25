@@ -19,7 +19,9 @@ import client from '../helpers/client'
     return(
       
                 <nav> 
-                    {medlemer.map((c, index) => (<Link key={index} to={"/" + c.slug.current}> {c.fulname}</Link>))}
+                   <Link to="/">Home</Link>
+                    {medlemer.map((c, index) => (<Link key={index} to={"/member/" + c.slug.current}> {c.fulname}</Link>))}
+                    
                 </nav>
 
     )
