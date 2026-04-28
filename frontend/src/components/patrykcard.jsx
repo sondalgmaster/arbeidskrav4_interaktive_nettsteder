@@ -8,6 +8,8 @@ export default function PatrykCard() {
     client
       .fetch(`*[_type == "medlemer"]{
         fulname,
+        email,
+        degree,
         profilpicture{
           asset->{
             url
@@ -28,6 +30,12 @@ export default function PatrykCard() {
             alt={member.fulname}
             width="200"
           />
+
+          <p>{member.degree}</p>
+
+          <p>
+            <a href={`mailto:${member.email}`}>{member.email}</a>
+          </p>
         </article>
       ))}
     </>

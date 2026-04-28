@@ -1,7 +1,15 @@
-# Semantic Fixes TODO
+# Styling for nettsiden
 
-- [ ] Fix `ARBKside.jsx` — remove nested `<main>`, use `<article>` with heading
-- [ ] Fix `arbkrv.jsx` — wrap footer links in `<ul><li>`
-- [ ] Fix `nav.jsx` — replace `<a href="/">` with `<Link to="/">`
-- [ ] Fix `patrykrp.jsx` — add heading inside `<section>`
+## Gjøremål
+
+- [x] Koble til style.css i main.jsx
+- [x] Skrive omfattende CSS i style.css
+  - [x] Layout (header, nav, main, footer)
+  - [x] Navigasjon (lenker, hover, responsiv)
+  - [x] Medlemskort (patryk-card, grid, skygger, bilder)
+  - [x] Prosjektliste (arbkrv, artikkelkort)
+  - [x] Medlemsdetaljside (patrykrp, profilayout)
+  - [x] Prosjektdetaljside (ARBKside, artikkelpresentasjon)
+  - [x] Responsivt design (media queries)
+- [x] Rydde opp i App.jsx (fjerne ubrukt App.css-import)
 

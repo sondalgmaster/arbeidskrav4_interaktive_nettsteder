@@ -14,7 +14,6 @@ export default function Patrykrp() {
           fulname,
           email,
           degree,
-          description,
           profilpicture{
             asset->{
               url
@@ -31,7 +30,7 @@ export default function Patrykrp() {
   return (
     <>
       <section>
-        <h2>{member.fulname}</h2>
+        <h2>Profil: {member.fulname}</h2>
 
         <img
           src={member.profilpicture?.asset?.url}
@@ -45,7 +44,6 @@ export default function Patrykrp() {
           <a href={`mailto:${member.email}`}>{member.email}</a>
         </p>
 
-        <p>{member.description}</p>
 
       </section>
     </>

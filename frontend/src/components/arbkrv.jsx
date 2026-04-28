@@ -18,7 +18,14 @@ export default function Arbkrv() {
     return(
       
                 <ul> 
-                    {ARBK.map((c, index) => (<li key={index}><Link to={"/project/" + c.slug.current}>{c.title}</Link></li>))}
+                    {ARBK.map((c, index) => (
+                        <li key={index}>
+                            <article>
+                                <h3><Link to={"/project/" + c.slug.current}>{c.title}</Link></h3>
+                                <p>{c.description}</p>
+                            </article>
+                        </li>
+                    ))}
                 </ul>
 
     )

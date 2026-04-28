@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import Header from "./header";
-import Arbkrv from "./arbkrv";
 
 export default function Layout() {
     return(
@@ -10,9 +9,10 @@ export default function Layout() {
             <Outlet />
             </main>
             <footer>
-                <Arbkrv/>
+                <p>Gruppe UIN26_18</p>
             </footer>
 
         </>
     )
 }
+
