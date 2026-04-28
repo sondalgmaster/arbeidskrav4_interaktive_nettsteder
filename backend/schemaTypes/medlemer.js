@@ -27,10 +27,21 @@ const medlemer = {
             type: 'string',
         },
         {
+            name: 'degree',
+            title: 'Bachelorstudium',
+            type: 'string',
+        },
+        {
+            name: 'description',
+            title: 'Beskrivelse',
+            type: 'text',
+        },
+        {
             name: "profilpicture",
             title: "Profilbilde",
             type: "image"
         },
+ 
 
 
     ],
